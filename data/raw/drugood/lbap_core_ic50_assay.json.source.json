@@ -1,0 +1,14 @@
+{
+  "official_repository": "https://github.com/tencent-ailab/DrugOOD",
+  "official_project": "https://drugood.github.io/",
+  "source_url": "https://drive.usercontent.google.com/download?id=1WRxT7zZ0zlvE8AW3mI_HDUPIpiRCkang&export=download&confirm=t",
+  "archive_name": "drugood_all.zip",
+  "archive_bytes": 1159700762,
+  "archive_member": "drugood_all/lbap_core_ic50_assay.json",
+  "archive_member_compressed_bytes": 1240854,
+  "archive_member_crc32": "8f5923d8",
+  "download_method": "HTTP Range extraction with zipfile CRC verification",
+  "downloaded_on": "2026-11-18",
+  "bytes": 14726635,
+  "sha256": "dd68dfa0d3aae1b23964ffae644e05524d59c423db6057e357b5769a51179eea"
+}

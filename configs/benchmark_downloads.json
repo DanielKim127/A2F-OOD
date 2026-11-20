@@ -1,0 +1,120 @@
+{
+  "description": "Pinned public official DrugOOD LBAP core and ADMEOOD label variants used by cited papers; keep original split membership unchanged.",
+  "verified_on": "2026-11-18",
+  "drugood_project": "https://drugood.github.io/",
+  "admeood_repository": "https://github.com/qweasdzxc-wsy/ADMEOOD",
+  "files": [
+    {
+      "dataset": "admeood-ec50-assay",
+      "path": "admeood/label_EC50_core.json",
+      "expected_bytes": 17131265,
+      "sha256": "7e82229abec9acd608a403ed9361c12b4785cbf383ee1049d7fdcfeb67579a1d",
+      "official_repository": "https://github.com/qweasdzxc-wsy/ADMEOOD",
+      "url": "https://drive.usercontent.google.com/download?id=1yz9FCR5tpnZ_0QamAH50Cgf5z0EoyeG3&export=download&confirm=t",
+      "variant": "label (concept-conflict drift), same filenames as CSRL configs",
+      "domain": "assay"
+    },
+    {
+      "dataset": "admeood-ec50-scaffold",
+      "path": "admeood/label_EC50_scaffold.json",
+      "expected_bytes": 29602668,
+      "sha256": "d3cd0b689a3fb2caffd5d7f9843eabc3ce0710af12dba7d9209483978f8645a2",
+      "official_repository": "https://github.com/qweasdzxc-wsy/ADMEOOD",
+      "url": "https://drive.usercontent.google.com/download?id=1KANdKIxpronp_tAfXBg4aBp1up5Ig6VH&export=download&confirm=t",
+      "variant": "label (concept-conflict drift), same filenames as CSRL configs",
+      "domain": "scaffold"
+    },
+    {
+      "dataset": "admeood-ki-assay",
+      "path": "admeood/label_KI_core.json",
+      "expected_bytes": 33410214,
+      "sha256": "54cbb0726b336ad9404230ab817c5fdabd158f796f3d29026917842753dd8951",
+      "official_repository": "https://github.com/qweasdzxc-wsy/ADMEOOD",
+      "url": "https://drive.usercontent.google.com/download?id=1OpoU4u5L-X0SpN3oJi4_ltv2MQ6IeRUG&export=download&confirm=t",
+      "variant": "label (concept-conflict drift), same filenames as CSRL configs",
+      "domain": "assay"
+    },
+    {
+      "dataset": "admeood-ki-scaffold",
+      "path": "admeood/label_KI_scaffold.json",
+      "expected_bytes": 68112639,
+      "sha256": "d5b98fa28a0040349f4d40a3a74bf29c32f51fc67b37714c3f1673ffd33e7570",
+      "official_repository": "https://github.com/qweasdzxc-wsy/ADMEOOD",
+      "url": "https://drive.usercontent.google.com/download?id=1lEy0DvOAmNjPCjegXN-oyqs3GaRgPoQg&export=download&confirm=t",
+      "variant": "label (concept-conflict drift), same filenames as CSRL configs",
+      "domain": "scaffold"
+    },
+    {
+      "dataset": "drugood-ec50-assay",
+      "path": "drugood/lbap_core_ec50_assay.json",
+      "expected_bytes": 2362885,
+      "sha256": "58b5bbf6f8bf6797b62e01c9680368b7180ee07a59da3dbc5ad410f7f1b0f0b0",
+      "official_repository": "https://github.com/tencent-ailab/DrugOOD",
+      "archive_url": "https://drive.usercontent.google.com/download?id=1WRxT7zZ0zlvE8AW3mI_HDUPIpiRCkang&export=download&confirm=t",
+      "archive_bytes": 1159700762,
+      "archive_member": "drugood_all/lbap_core_ec50_assay.json",
+      "archive_member_compressed_bytes": 200106,
+      "archive_member_crc32": "6de61ba3"
+    },
+    {
+      "dataset": "drugood-ec50-scaffold",
+      "path": "drugood/lbap_core_ec50_scaffold.json",
+      "expected_bytes": 2380449,
+      "sha256": "bb33130d64fdc171d12230f97e7ff6eae00f50accafef6babc84eccd85642a67",
+      "official_repository": "https://github.com/tencent-ailab/DrugOOD",
+      "archive_url": "https://drive.usercontent.google.com/download?id=1WRxT7zZ0zlvE8AW3mI_HDUPIpiRCkang&export=download&confirm=t",
+      "archive_bytes": 1159700762,
+      "archive_member": "drugood_all/lbap_core_ec50_scaffold.json",
+      "archive_member_compressed_bytes": 241799,
+      "archive_member_crc32": "f887ef1d"
+    },
+    {
+      "dataset": "drugood-ec50-size",
+      "path": "drugood/lbap_core_ec50_size.json",
+      "expected_bytes": 2350822,
+      "sha256": "fe7d474cb5fa899a684dc0168346edd49820716f40a75b9c7ae4d6dd39014674",
+      "official_repository": "https://github.com/tencent-ailab/DrugOOD",
+      "archive_url": "https://drive.usercontent.google.com/download?id=1WRxT7zZ0zlvE8AW3mI_HDUPIpiRCkang&export=download&confirm=t",
+      "archive_bytes": 1159700762,
+      "archive_member": "drugood_all/lbap_core_ec50_size.json",
+      "archive_member_compressed_bytes": 248294,
+      "archive_member_crc32": "f86f729e"
+    },
+    {
+      "dataset": "drugood-ic50-assay",
+      "path": "drugood/lbap_core_ic50_assay.json",
+      "expected_bytes": 14726635,
+      "sha256": "dd68dfa0d3aae1b23964ffae644e05524d59c423db6057e357b5769a51179eea",
+      "official_repository": "https://github.com/tencent-ailab/DrugOOD",
+      "archive_url": "https://drive.usercontent.google.com/download?id=1WRxT7zZ0zlvE8AW3mI_HDUPIpiRCkang&export=download&confirm=t",
+      "archive_bytes": 1159700762,
+      "archive_member": "drugood_all/lbap_core_ic50_assay.json",
+      "archive_member_compressed_bytes": 1240854,
+      "archive_member_crc32": "8f5923d8"
+    },
+    {
+      "dataset": "drugood-ic50-scaffold",
+      "path": "drugood/lbap_core_ic50_scaffold.json",
+      "expected_bytes": 14862829,
+      "sha256": "94d42f71dc1c1cd57bfd61a766a7b953e2e167a8445e3c2cb8ddd118a9e5cb30",
+      "official_repository": "https://github.com/tencent-ailab/DrugOOD",
+      "archive_url": "https://drive.usercontent.google.com/download?id=1WRxT7zZ0zlvE8AW3mI_HDUPIpiRCkang&export=download&confirm=t",
+      "archive_bytes": 1159700762,
+      "archive_member": "drugood_all/lbap_core_ic50_scaffold.json",
+      "archive_member_compressed_bytes": 1577435,
+      "archive_member_crc32": "aec39668"
+    },
+    {
+      "dataset": "drugood-ic50-size",
+      "path": "drugood/lbap_core_ic50_size.json",
+      "expected_bytes": 14593773,
+      "sha256": "8326e3d16c320c3d1a3cb074868deb2c2dae9bf2393a22bf0691b8b97e138802",
+      "official_repository": "https://github.com/tencent-ailab/DrugOOD",
+      "archive_url": "https://drive.usercontent.google.com/download?id=1WRxT7zZ0zlvE8AW3mI_HDUPIpiRCkang&export=download&confirm=t",
+      "archive_bytes": 1159700762,
+      "archive_member": "drugood_all/lbap_core_ic50_size.json",
+      "archive_member_compressed_bytes": 1946214,
+      "archive_member_crc32": "74ea5264"
+    }
+  ]
+}

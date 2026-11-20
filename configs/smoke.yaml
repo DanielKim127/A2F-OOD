@@ -1,0 +1,35 @@
+# Pipeline demonstration with fictitious labels; not a scientific benchmark.
+experiment:
+  name: smoke
+  seed: 42
+  output_dir: outputs/smoke
+data:
+  csv_path: data/example.csv
+  smiles_column: smiles
+  label_columns: [label]
+  group_column: group
+  task_type: binary
+  split_column: split
+  split_strategy: preassigned
+  random_smiles_per_molecule: 2
+model:
+  hidden_dim: 32
+  graph_layers: 2
+  smiles_layers: 2
+  attention_heads: 4
+  dropout: 0.0
+  use_cross_modal_decoder: true
+fusion:
+  mode: adaptive
+loss:
+  use_group_dro: true
+  auxiliary_warmup_epochs: 2
+training:
+  epochs: 5
+  patience: 5
+  batch_size: 8
+  learning_rate: 0.001
+  device: cpu
+  cpu_threads: 2
+evaluation:
+  random_smiles_views: 3

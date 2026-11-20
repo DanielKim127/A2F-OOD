@@ -1,0 +1,85 @@
+# Table attributes: atom=157, bond=14, hidden=256; staged stable training.
+experiment:
+  name: admeood_ki_assay
+  seed: 42
+  output_dir: outputs/admeood_ki_assay
+data:
+  csv_path: data/processed/admeood/label_KI_core.csv
+  smiles_column: smiles
+  label_columns:
+  - label
+  group_column: group
+  task_type: binary
+  num_classes: null
+  split_column: split
+  split_strategy: preassigned
+  split_fractions:
+  - 0.8
+  - 0.1
+  - 0.1
+  group_strategy: column
+  overlap_policy: error
+  valid_groups: []
+  test_groups: []
+  max_smiles_length: 512
+  random_smiles_per_molecule: 2
+  invalid_smiles_policy: skip
+model:
+  hidden_dim: 256
+  graph_layers: 4
+  smiles_layers: 4
+  attention_heads: 4
+  dropout: 0.1
+  max_atom_count: 256
+  use_cross_modal_decoder: true
+fusion:
+  mode: adaptive
+  atom_alignment: true
+  bidirectional_cross_attention: true
+  reliability_gate: true
+  unimodal_auxiliary_heads: true
+loss:
+  classification_weighting: balanced
+  lambda_atom_alignment: 0.02
+  lambda_serialization_consistency: 0.1
+  lambda_cross_modal: 0.1
+  lambda_generation: 0.01
+  lambda_unimodal: 0.05
+  use_group_dro: true
+  group_dro_step_size: 0.1
+  temperature: 0.1
+  max_alignment_atoms: 512
+  regression_loss: mse
+  auxiliary_warmup_epochs: 10
+  supervised_warmup_epochs: 2
+  group_dro_update_mode: epoch
+  group_dro_max_weight_ratio: 3.0
+  group_dro_strength: 0.25
+  group_dro_warmup_epochs: 5
+  group_dro_ramp_epochs: 5
+training:
+  epochs: 100
+  batch_size: 32
+  learning_rate: 0.0001
+  weight_decay: 1.0e-05
+  patience: 15
+  num_workers: 0
+  device: auto
+  gradient_clip: 1.0
+  cpu_threads: 4
+  monitor: roc_auc
+  monitor_mode: max
+  learning_rate_warmup_epochs: 3
+  lr_scheduler: plateau
+  lr_scheduler_patience: 3
+  lr_scheduler_factor: 0.5
+  min_learning_rate: 1.0e-06
+  monitor_min_delta: 0.001
+  validation_smiles_views: 3
+evaluation:
+  metrics:
+  - roc_auc
+  - average_precision
+  report_group_metrics: true
+  random_smiles_views: 5
+  generate_smiles: false

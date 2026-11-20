@@ -1,0 +1,135 @@
+{
+  "dataset_name": "label_KI_core",
+  "source_path": "C:\\Users\\xhh00\\Documents\\ChatGPT\\ood分子性质预测\\data\\raw\\admeood\\label_KI_core.json",
+  "source_bytes": 33410214,
+  "source_sha256": "54cbb0726b336ad9404230ab817c5fdabd158f796f3d29026917842753dd8951",
+  "source_download": {
+    "official_repository": "https://github.com/qweasdzxc-wsy/ADMEOOD",
+    "official_folder": "https://drive.google.com/drive/folders/1VfagSbiSeyeF_k9B3hsql6DD1IaVMeHJ",
+    "source_url": "https://drive.usercontent.google.com/download?id=1OpoU4u5L-X0SpN3oJi4_ltv2MQ6IeRUG&export=download&confirm=t",
+    "download_method": "Google Drive direct public HTTPS",
+    "variant": "label (concept-conflict drift), same filenames as CSRL configs",
+    "domain": "assay",
+    "downloaded_on": "2026-11-18",
+    "bytes": 33410214,
+    "sha256": "54cbb0726b336ad9404230ab817c5fdabd158f796f3d29026917842753dd8951"
+  },
+  "label_key": "cls_label",
+  "group_key": "domain_id",
+  "smiles_key": "smiles",
+  "split_mapping": {
+    "train": "train",
+    "ood_val": "valid",
+    "ood_test": "test"
+  },
+  "official_split_counts": {
+    "train": 23487,
+    "iid_val": 6537,
+    "iid_test": 14085,
+    "ood_val": 434,
+    "ood_test": 431
+  },
+  "official_domain_counts": {
+    "train": 4210,
+    "iid_val": 2385,
+    "iid_test": 6413,
+    "ood_val": 175,
+    "ood_test": 192
+  },
+  "binary_positive_counts": {
+    "train": 1811,
+    "iid_val": 489,
+    "iid_test": 1198,
+    "ood_val": 95,
+    "ood_test": 140
+  },
+  "binary_negative_counts": {
+    "train": 21676,
+    "iid_val": 6048,
+    "iid_test": 12887,
+    "ood_val": 339,
+    "ood_test": 291
+  },
+  "literal_smiles_overlap": {},
+  "overlap_note": "Original official rows are preserved. This checks literal strings, not RDKit-normalized structures; downstream preprocessing must audit canonical overlaps.",
+  "canonical_audit": {
+    "status": "complete",
+    "unique_canonical_molecules": 44973,
+    "invalid_smiles_rows": 0,
+    "invalid_row_examples": [],
+    "overlap": {},
+    "conflicting_label_molecules": 0,
+    "cross_split_conflicting_label_molecules": 0,
+    "conflicting_label_examples": [],
+    "policy": "Audit only; no rows, labels, or official split memberships were changed."
+  },
+  "original_cfg": {
+    "path": {
+      "task": {
+        "type": "lbap",
+        "subset": "lbap_core_ec50_assay_custom"
+      },
+      "source_root": "/data_1/wsy22/ood/CHEMBL_SQLLITE/chembl_29_sqlite/chembl_29.db",
+      "target_root": "data/"
+    },
+    "uncertainty": {
+      "delta": {
+        "<": -1,
+        "<=": -1,
+        ">": 1,
+        ">=": 1
+      }
+    },
+    "classification_threshold": {
+      "lower_bound": 4,
+      "upper_bound": 6,
+      "fix_value": 5
+    },
+    "fractions": {
+      "train_fraction_ood": 0.6,
+      "val_fraction_ood": 0.2,
+      "iid_train_sample_fractions": 0.6,
+      "iid_val_sample_fractions": 0.2
+    },
+    "noise_filter": {
+      "assay": {
+        "measurement_type": [
+          "EC50"
+        ],
+        "assay_value_units": [
+          "nM",
+          "uM"
+        ],
+        "molecules_number": [
+          50,
+          100
+        ],
+        "confidence_score": 9
+      },
+      "sample": {
+        "filter_none": [],
+        "smile_exist": [],
+        "smile_legal": [],
+        "value_relation": [
+          "=",
+          "~"
+        ]
+      }
+    },
+    "domain": {
+      "domain_generate_field": "assay_id",
+      "domain_name": "assay",
+      "sort_func": "domain_capacity",
+      "sort_order": "descend",
+      "protein_family_level": 1
+    }
+  },
+  "original_statistics": null,
+  "created_at_utc": "2026-11-18T11:09:25.100489+00:00",
+  "selected_rows": 24352,
+  "all_rows": 44974,
+  "csv_path": "C:\\Users\\xhh00\\Documents\\ChatGPT\\ood分子性质预测\\data\\processed\\admeood\\label_KI_core.csv",
+  "all_splits_csv": "C:\\Users\\xhh00\\Documents\\ChatGPT\\ood分子性质预测\\data\\processed\\admeood\\label_KI_core.all_splits.csv",
+  "csv_sha256": "a3ed51b27883780a509a923e07b1916f3535583bb0e2ed916c064212446e80f1",
+  "all_splits_csv_sha256": "41a8b656c86fcb5bb3c2fc737bf178205eab659d9933dff985b8f4b013172725"
+}

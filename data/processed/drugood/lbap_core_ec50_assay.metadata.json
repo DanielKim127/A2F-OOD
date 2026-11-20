@@ -1,0 +1,155 @@
+{
+  "dataset_name": "lbap_core_ec50_assay",
+  "source_path": "C:\\Users\\xhh00\\Documents\\ChatGPT\\ood分子性质预测\\data\\raw\\drugood\\lbap_core_ec50_assay.json",
+  "source_bytes": 2362885,
+  "source_sha256": "58b5bbf6f8bf6797b62e01c9680368b7180ee07a59da3dbc5ad410f7f1b0f0b0",
+  "source_download": {
+    "official_repository": "https://github.com/tencent-ailab/DrugOOD",
+    "official_project": "https://drugood.github.io/",
+    "source_url": "https://drive.usercontent.google.com/download?id=1WRxT7zZ0zlvE8AW3mI_HDUPIpiRCkang&export=download&confirm=t",
+    "archive_name": "drugood_all.zip",
+    "archive_bytes": 1159700762,
+    "archive_member": "drugood_all/lbap_core_ec50_assay.json",
+    "archive_member_compressed_bytes": 200106,
+    "archive_member_crc32": "6de61ba3",
+    "download_method": "HTTP Range extraction with zipfile CRC verification",
+    "downloaded_on": "2026-11-18",
+    "bytes": 2362885,
+    "sha256": "58b5bbf6f8bf6797b62e01c9680368b7180ee07a59da3dbc5ad410f7f1b0f0b0"
+  },
+  "label_key": "cls_label",
+  "group_key": "domain_id",
+  "smiles_key": "smiles",
+  "split_mapping": {
+    "train": "train",
+    "ood_val": "valid",
+    "ood_test": "test"
+  },
+  "official_split_counts": {
+    "train": 4978,
+    "iid_val": 1647,
+    "iid_test": 1705,
+    "ood_val": 2761,
+    "ood_test": 2725
+  },
+  "official_domain_counts": {
+    "train": 49,
+    "iid_val": 49,
+    "iid_test": 49,
+    "ood_val": 49,
+    "ood_test": 109
+  },
+  "binary_positive_counts": {
+    "train": 3801,
+    "iid_val": 1262,
+    "iid_test": 1318,
+    "ood_val": 2464,
+    "ood_test": 2488
+  },
+  "binary_negative_counts": {
+    "train": 1177,
+    "iid_val": 385,
+    "iid_test": 387,
+    "ood_val": 297,
+    "ood_test": 237
+  },
+  "literal_smiles_overlap": {},
+  "overlap_note": "Original official rows are preserved. This checks literal strings, not RDKit-normalized structures; downstream preprocessing must audit canonical overlaps.",
+  "canonical_audit": {
+    "status": "complete",
+    "unique_canonical_molecules": 13816,
+    "invalid_smiles_rows": 0,
+    "invalid_row_examples": [],
+    "overlap": {},
+    "conflicting_label_molecules": 0,
+    "cross_split_conflicting_label_molecules": 0,
+    "conflicting_label_examples": [],
+    "policy": "Audit only; no rows, labels, or official split memberships were changed."
+  },
+  "original_cfg": {
+    "path": {
+      "task": {
+        "type": "lbap",
+        "subset": "lbap_core_ec50_assay"
+      },
+      "source_root": "/Users/yuanfeng/Desktop/chembl_30/chembl_30_sqlite/chembl_30.db",
+      "target_root": "data/"
+    },
+    "uncertainty": {
+      "delta": {
+        "<": -1,
+        "<=": -1,
+        ">": 1,
+        ">=": 1
+      }
+    },
+    "classification_threshold": {
+      "lower_bound": 4,
+      "upper_bound": 6,
+      "fix_value": 5
+    },
+    "fractions": {
+      "train_fraction_ood": 0.6,
+      "val_fraction_ood": 0.2,
+      "iid_train_sample_fractions": 0.6,
+      "iid_val_sample_fractions": 0.2
+    },
+    "noise_filter": {
+      "assay": {
+        "measurement_type": [
+          "EC50"
+        ],
+        "assay_value_units": [
+          "nM",
+          "uM"
+        ],
+        "molecules_number": [
+          50,
+          3000
+        ],
+        "confidence_score": 9
+      },
+      "sample": {
+        "filter_none": [],
+        "smile_exist": [],
+        "smile_legal": [],
+        "value_relation": [
+          "=",
+          "~"
+        ]
+      }
+    },
+    "domain": {
+      "domain_generate_field": "assay_id",
+      "domain_name": "assay",
+      "sort_func": "domain_capacity",
+      "sort_order": "descend",
+      "protein_family_level": 1
+    }
+  },
+  "original_statistics": {
+    "thr_for_cls": 5,
+    "positive_samples": 11333,
+    "negative_samples": 2483,
+    "positive_rate": 0.8202808338158657,
+    "train domain number": 49,
+    "val domain number": 49,
+    "test domain number": 109,
+    "train datapoints": 4978,
+    "ood_val datapoints": 2761,
+    "ood_test datapoints": 2725,
+    "iid_val datapoints": 1647,
+    "iid_test datapoints": 1705,
+    "ood_val domain number": 49,
+    "ood_test domain number": 109,
+    "iid_val domain number": 49,
+    "iid_test domain number": 49
+  },
+  "created_at_utc": "2026-11-18T11:09:56.641890+00:00",
+  "selected_rows": 10464,
+  "all_rows": 13816,
+  "csv_path": "C:\\Users\\xhh00\\Documents\\ChatGPT\\ood分子性质预测\\data\\processed\\drugood\\lbap_core_ec50_assay.csv",
+  "all_splits_csv": "C:\\Users\\xhh00\\Documents\\ChatGPT\\ood分子性质预测\\data\\processed\\drugood\\lbap_core_ec50_assay.all_splits.csv",
+  "csv_sha256": "6ad77cd5b3095247a1a5a1df2643d3a10993ba39d15fd599e4ff9862a2d0bcc7",
+  "all_splits_csv_sha256": "f09b599fb0244d0bc5932097f812846531c9d1bd41b501f923c3b4f34b448d8a"
+}

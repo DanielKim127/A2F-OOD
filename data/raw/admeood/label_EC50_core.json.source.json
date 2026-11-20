@@ -1,0 +1,11 @@
+{
+  "official_repository": "https://github.com/qweasdzxc-wsy/ADMEOOD",
+  "official_folder": "https://drive.google.com/drive/folders/1VfagSbiSeyeF_k9B3hsql6DD1IaVMeHJ",
+  "source_url": "https://drive.usercontent.google.com/download?id=1yz9FCR5tpnZ_0QamAH50Cgf5z0EoyeG3&export=download&confirm=t",
+  "download_method": "Google Drive direct public HTTPS",
+  "variant": "label (concept-conflict drift), same filenames as CSRL configs",
+  "domain": "assay",
+  "downloaded_on": "2026-11-18",
+  "bytes": 17131265,
+  "sha256": "7e82229abec9acd608a403ed9361c12b4785cbf383ee1049d7fdcfeb67579a1d"
+}

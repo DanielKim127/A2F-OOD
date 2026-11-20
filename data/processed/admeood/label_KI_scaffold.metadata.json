@@ -1,0 +1,227 @@
+{
+  "dataset_name": "label_KI_scaffold",
+  "source_path": "C:\\Users\\xhh00\\Documents\\ChatGPT\\ood分子性质预测\\data\\raw\\admeood\\label_KI_scaffold.json",
+  "source_bytes": 68112639,
+  "source_sha256": "d5b98fa28a0040349f4d40a3a74bf29c32f51fc67b37714c3f1673ffd33e7570",
+  "source_download": {
+    "official_repository": "https://github.com/qweasdzxc-wsy/ADMEOOD",
+    "official_folder": "https://drive.google.com/drive/folders/1VfagSbiSeyeF_k9B3hsql6DD1IaVMeHJ",
+    "source_url": "https://drive.usercontent.google.com/download?id=1lEy0DvOAmNjPCjegXN-oyqs3GaRgPoQg&export=download&confirm=t",
+    "download_method": "Google Drive direct public HTTPS",
+    "variant": "label (concept-conflict drift), same filenames as CSRL configs",
+    "domain": "scaffold",
+    "downloaded_on": "2026-11-18",
+    "bytes": 68112639,
+    "sha256": "d5b98fa28a0040349f4d40a3a74bf29c32f51fc67b37714c3f1673ffd33e7570"
+  },
+  "label_key": "cls_label",
+  "group_key": "domain_id",
+  "smiles_key": "smiles",
+  "split_mapping": {
+    "train": "train",
+    "ood_val": "valid",
+    "ood_test": "test"
+  },
+  "official_split_counts": {
+    "train": 31110,
+    "iid_val": 3362,
+    "iid_test": 54774,
+    "ood_val": 1207,
+    "ood_test": 1204
+  },
+  "official_domain_counts": {
+    "train": 19500,
+    "iid_val": 1971,
+    "iid_test": 44108,
+    "ood_val": 402,
+    "ood_test": 463
+  },
+  "binary_positive_counts": {
+    "train": 2263,
+    "iid_val": 258,
+    "iid_test": 4191,
+    "ood_val": 146,
+    "ood_test": 99
+  },
+  "binary_negative_counts": {
+    "train": 28847,
+    "iid_val": 3104,
+    "iid_test": 50583,
+    "ood_val": 1061,
+    "ood_test": 1105
+  },
+  "literal_smiles_overlap": {
+    "train/iid_val": {
+      "count": 1971,
+      "examples": [
+        "Br.CN1CCc2ccccc2Cc2cc(O)c(O)cc2CC1",
+        "Br.CN1CCc2ccccc2Cc2ccc(O)cc2CC1",
+        "Brc1c(Br)c(Br)c2[nH]cnc2c1Br",
+        "C#CCN(CC#C)CCCCOc1ccc(S(N)(=O)=O)cc1",
+        "C#CCN(CC#C)CCc1ccc(S(N)(=O)=O)cc1",
+        "C#CCN(CCCCN1CCN(c2ccccc2)CC1)C1CCc2ccc(O)cc2C1",
+        "C#CCSc1ccncc1S(N)(=O)=O",
+        "C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CCC4=C3[C@@H](c3ccc(N(C)CCCC(=O)N(C)C4CC[C@@]5(C)[C@@H](C4)C[C@@H](O)[C@@H]4[C@@H]5C[C@H](O)[C@@]5(C)[C@H]4CC[C@@H]5[C@H](C)CCC(=O)O)cc3)C[C@@]21C",
+        "C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CCC4=C3[C@@H](c3ccc(N(C)CCCOC4CC[C@]5(C)[C@H]6C[C@H](O)[C@@]7(C)[C@@H](CC[C@@H]7[C@H](C)CCC(=O)O)[C@@H]6[C@H](O)C[C@@H]5C4)cc3)C[C@@]21C",
+        "C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CCC4=C3[C@@H](c3ccc(N(C)CCCS(=O)(=O)N(C)C4CC[C@@]5(C)[C@@H](C4)C[C@@H](O)[C@@H]4[C@@H]5C[C@H](O)[C@@]5(C)[C@H]4CC[C@@H]5[C@H](C)CCC(=O)O)cc3)C[C@@]21C"
+      ]
+    },
+    "train/iid_test": {
+      "count": 19500,
+      "examples": [
+        "Br.Br.N=C(NCCc1ccc(I)cc1)SCCCc1c[nH]cn1",
+        "Br.C=CCN1CCc2cccc3c2[C@H]1Cc1ccc(O)c(O)c1-3",
+        "Br.CCCN(CCC)C1CCc2ccc(O)cc2C1",
+        "Br.CCCN1C[C@H](c2ccc(O)cc2)C[C@@H]2c3cc(O)c(O)cc3CC[C@H]21",
+        "Br.CN1CCc2ccccc2Cc2cc(O)c(O)cc2CC1",
+        "Br.CN1CCc2ccccc2Cc2ccc(O)cc2CC1",
+        "Br.CNC[C@@H]1O[C@H](C2CCCCC2)Cc2c1ccc(C)c2O",
+        "Br.CNc1nc2c(s1)C[C@H]1[C@H]3Cc4ccc(O)cc4[C@@]1(CCN3CC1CC1)C2",
+        "Br.CS(=O)(=O)Nc1c(O)ccc2c1CCCC2C1=NCCN1",
+        "Br.Cc1ccc2c(c1O)C[C@@H](C1CCCCC1)O[C@H]2CN"
+      ]
+    },
+    "iid_val/iid_test": {
+      "count": 1971,
+      "examples": [
+        "Br.CN1CCc2ccccc2Cc2cc(O)c(O)cc2CC1",
+        "Br.CN1CCc2ccccc2Cc2ccc(O)cc2CC1",
+        "Brc1c(Br)c(Br)c2[nH]cnc2c1Br",
+        "C#CCN(CC#C)CCCCOc1ccc(S(N)(=O)=O)cc1",
+        "C#CCN(CC#C)CCc1ccc(S(N)(=O)=O)cc1",
+        "C#CCN(CCCCN1CCN(c2ccccc2)CC1)C1CCc2ccc(O)cc2C1",
+        "C#CCSc1ccncc1S(N)(=O)=O",
+        "C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CCC4=C3[C@@H](c3ccc(N(C)CCCC(=O)N(C)C4CC[C@@]5(C)[C@@H](C4)C[C@@H](O)[C@@H]4[C@@H]5C[C@H](O)[C@@]5(C)[C@H]4CC[C@@H]5[C@H](C)CCC(=O)O)cc3)C[C@@]21C",
+        "C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CCC4=C3[C@@H](c3ccc(N(C)CCCOC4CC[C@]5(C)[C@H]6C[C@H](O)[C@@]7(C)[C@@H](CC[C@@H]7[C@H](C)CCC(=O)O)[C@@H]6[C@H](O)C[C@@H]5C4)cc3)C[C@@]21C",
+        "C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CCC4=C3[C@@H](c3ccc(N(C)CCCS(=O)(=O)N(C)C4CC[C@@]5(C)[C@@H](C4)C[C@@H](O)[C@@H]4[C@@H]5C[C@H](O)[C@@]5(C)[C@H]4CC[C@@H]5[C@H](C)CCC(=O)O)cc3)C[C@@]21C"
+      ]
+    }
+  },
+  "overlap_note": "Original official rows are preserved. This checks literal strings, not RDKit-normalized structures; downstream preprocessing must audit canonical overlaps.",
+  "canonical_audit": {
+    "status": "complete",
+    "unique_canonical_molecules": 44973,
+    "invalid_smiles_rows": 0,
+    "invalid_row_examples": [],
+    "overlap": {
+      "train/iid_val": {
+        "count": 1971,
+        "examples": [
+          "Br.CN1CCc2ccccc2Cc2cc(O)c(O)cc2CC1",
+          "Br.CN1CCc2ccccc2Cc2ccc(O)cc2CC1",
+          "Brc1c(Br)c(Br)c2[nH]cnc2c1Br",
+          "C#CCN(CC#C)CCCCOc1ccc(S(N)(=O)=O)cc1",
+          "C#CCN(CC#C)CCc1ccc(S(N)(=O)=O)cc1",
+          "C#CCN(CCCCN1CCN(c2ccccc2)CC1)C1CCc2ccc(O)cc2C1",
+          "C#CCSc1ccncc1S(N)(=O)=O",
+          "C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CCC4=C3[C@@H](c3ccc(N(C)CCCC(=O)N(C)C4CC[C@@]5(C)[C@@H](C4)C[C@@H](O)[C@@H]4[C@@H]5C[C@H](O)[C@]5(C)[C@@H]([C@H](C)CCC(=O)O)CC[C@@H]45)cc3)C[C@@]21C",
+          "C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CCC4=C3[C@@H](c3ccc(N(C)CCCOC4CC[C@@]5(C)[C@@H](C4)C[C@@H](O)[C@@H]4[C@@H]5C[C@H](O)[C@]5(C)[C@@H]([C@H](C)CCC(=O)O)CC[C@@H]45)cc3)C[C@@]21C",
+          "C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CCC4=C3[C@@H](c3ccc(N(C)CCCS(=O)(=O)N(C)C4CC[C@@]5(C)[C@@H](C4)C[C@@H](O)[C@@H]4[C@@H]5C[C@H](O)[C@]5(C)[C@@H]([C@H](C)CCC(=O)O)CC[C@@H]45)cc3)C[C@@]21C"
+        ]
+      },
+      "train/iid_test": {
+        "count": 19500,
+        "examples": [
+          "Br.Br.N=C(NCCc1ccc(I)cc1)SCCCc1c[nH]cn1",
+          "Br.C=CCN1CCc2cccc3c2[C@H]1Cc1ccc(O)c(O)c1-3",
+          "Br.CCCN(CCC)C1CCc2ccc(O)cc2C1",
+          "Br.CCCN1C[C@H](c2ccc(O)cc2)C[C@@H]2c3cc(O)c(O)cc3CC[C@H]21",
+          "Br.CN1CCc2ccccc2Cc2cc(O)c(O)cc2CC1",
+          "Br.CN1CCc2ccccc2Cc2ccc(O)cc2CC1",
+          "Br.CNC[C@@H]1O[C@H](C2CCCCC2)Cc2c1ccc(C)c2O",
+          "Br.CNc1nc2c(s1)C[C@H]1[C@H]3Cc4ccc(O)cc4[C@@]1(CCN3CC1CC1)C2",
+          "Br.CS(=O)(=O)Nc1c(O)ccc2c1CCCC2C1=NCCN1",
+          "Br.Cc1ccc2c(c1O)C[C@@H](C1CCCCC1)O[C@H]2CN"
+        ]
+      },
+      "iid_val/iid_test": {
+        "count": 1971,
+        "examples": [
+          "Br.CN1CCc2ccccc2Cc2cc(O)c(O)cc2CC1",
+          "Br.CN1CCc2ccccc2Cc2ccc(O)cc2CC1",
+          "Brc1c(Br)c(Br)c2[nH]cnc2c1Br",
+          "C#CCN(CC#C)CCCCOc1ccc(S(N)(=O)=O)cc1",
+          "C#CCN(CC#C)CCc1ccc(S(N)(=O)=O)cc1",
+          "C#CCN(CCCCN1CCN(c2ccccc2)CC1)C1CCc2ccc(O)cc2C1",
+          "C#CCSc1ccncc1S(N)(=O)=O",
+          "C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CCC4=C3[C@@H](c3ccc(N(C)CCCC(=O)N(C)C4CC[C@@]5(C)[C@@H](C4)C[C@@H](O)[C@@H]4[C@@H]5C[C@H](O)[C@]5(C)[C@@H]([C@H](C)CCC(=O)O)CC[C@@H]45)cc3)C[C@@]21C",
+          "C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CCC4=C3[C@@H](c3ccc(N(C)CCCOC4CC[C@@]5(C)[C@@H](C4)C[C@@H](O)[C@@H]4[C@@H]5C[C@H](O)[C@]5(C)[C@@H]([C@H](C)CCC(=O)O)CC[C@@H]45)cc3)C[C@@]21C",
+          "C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CCC4=C3[C@@H](c3ccc(N(C)CCCS(=O)(=O)N(C)C4CC[C@@]5(C)[C@@H](C4)C[C@@H](O)[C@@H]4[C@@H]5C[C@H](O)[C@]5(C)[C@@H]([C@H](C)CCC(=O)O)CC[C@@H]45)cc3)C[C@@]21C"
+        ]
+      }
+    },
+    "conflicting_label_molecules": 0,
+    "cross_split_conflicting_label_molecules": 0,
+    "conflicting_label_examples": [],
+    "policy": "Audit only; no rows, labels, or official split memberships were changed."
+  },
+  "original_cfg": {
+    "path": {
+      "task": {
+        "type": "lbap",
+        "subset": "lbap_core_ec50_assay_custom"
+      },
+      "source_root": "/data_1/wsy22/ood/CHEMBL_SQLLITE/chembl_29_sqlite/chembl_29.db",
+      "target_root": "data/"
+    },
+    "uncertainty": {
+      "delta": {
+        "<": -1,
+        "<=": -1,
+        ">": 1,
+        ">=": 1
+      }
+    },
+    "classification_threshold": {
+      "lower_bound": 4,
+      "upper_bound": 6,
+      "fix_value": 5
+    },
+    "fractions": {
+      "train_fraction_ood": 0.6,
+      "val_fraction_ood": 0.2,
+      "iid_train_sample_fractions": 0.6,
+      "iid_val_sample_fractions": 0.2
+    },
+    "noise_filter": {
+      "assay": {
+        "measurement_type": [
+          "EC50"
+        ],
+        "assay_value_units": [
+          "nM",
+          "uM"
+        ],
+        "molecules_number": [
+          50,
+          100
+        ],
+        "confidence_score": 9
+      },
+      "sample": {
+        "filter_none": [],
+        "smile_exist": [],
+        "smile_legal": [],
+        "value_relation": [
+          "=",
+          "~"
+        ]
+      }
+    },
+    "domain": {
+      "domain_generate_field": "assay_id",
+      "domain_name": "assay",
+      "sort_func": "domain_capacity",
+      "sort_order": "descend",
+      "protein_family_level": 1
+    }
+  },
+  "original_statistics": null,
+  "created_at_utc": "2026-11-18T11:09:47.974725+00:00",
+  "selected_rows": 33521,
+  "all_rows": 91657,
+  "csv_path": "C:\\Users\\xhh00\\Documents\\ChatGPT\\ood分子性质预测\\data\\processed\\admeood\\label_KI_scaffold.csv",
+  "all_splits_csv": "C:\\Users\\xhh00\\Documents\\ChatGPT\\ood分子性质预测\\data\\processed\\admeood\\label_KI_scaffold.all_splits.csv",
+  "csv_sha256": "a52431a06ae02d4f4c302901ce832639f3f649d5e589a418e58534195de3da8e",
+  "all_splits_csv_sha256": "8d1efc92608e24208fa989f88fce53de6a518ba2cd8345443c22a0f81bbf3dd3"
+}

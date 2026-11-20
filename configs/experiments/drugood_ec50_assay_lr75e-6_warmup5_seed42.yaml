@@ -1,0 +1,87 @@
+experiment:
+  name: drugood_ec50_assay_lr_warmup_seed42
+  seed: 42
+  output_dir: outputs/drugood_ec50_assay_lr_warmup_seed42_20261120_01/seed_42
+data:
+  smiles_column: smiles
+  label_columns:
+  - label
+  group_column: group
+  task_type: binary
+  num_classes: null
+  split_column: split
+  split_strategy: preassigned
+  split_fractions:
+  - 0.8
+  - 0.1
+  - 0.1
+  group_strategy: column
+  valid_groups: []
+  test_groups: []
+  overlap_policy: error
+  max_smiles_length: 512
+  random_smiles_per_molecule: 2
+  invalid_smiles_policy: skip
+  csv_path: data/processed/drugood/lbap_core_ec50_assay.csv
+model:
+  hidden_dim: 192
+  graph_layers: 4
+  smiles_layers: 3
+  attention_heads: 4
+  dropout: 0.2
+  max_atom_count: 256
+  use_cross_modal_decoder: true
+fusion:
+  mode: graph
+  atom_alignment: true
+  bidirectional_cross_attention: false
+  reliability_gate: false
+  unimodal_auxiliary_heads: true
+loss:
+  lambda_atom_alignment: 0.01
+  lambda_serialization_consistency: 0.05
+  lambda_cross_modal: 0.05
+  lambda_generation: 0.005
+  lambda_unimodal: 0.025
+  use_group_dro: false
+  group_dro_step_size: 0.1
+  group_dro_update_mode: epoch
+  group_dro_max_weight_ratio: 3.0
+  group_dro_strength: 0
+  group_dro_warmup_epochs: 5
+  group_dro_ramp_epochs: 5
+  supervised_warmup_epochs: 2
+  temperature: 0.1
+  max_alignment_atoms: 512
+  regression_loss: mse
+  auxiliary_warmup_epochs: 10
+  classification_weighting: balanced
+  binary_class_weights:
+  - - 2.08071367884452
+    - 0.6581564095673206
+training:
+  epochs: 50
+  batch_size: 16
+  learning_rate: 7.5e-05
+  weight_decay: 0.01
+  patience: 51
+  num_workers: 0
+  device: cuda
+  gradient_clip: 1.0
+  cpu_threads: 4
+  monitor: roc_auc
+  monitor_mode: max
+  monitor_min_delta: 0.001
+  learning_rate_warmup_epochs: 5
+  lr_scheduler: plateau
+  lr_scheduler_patience: 3
+  lr_scheduler_factor: 0.5
+  min_learning_rate: 1.0e-06
+  validation_smiles_views: 3
+evaluation:
+  metrics:
+  - roc_auc
+  - average_precision
+  report_group_metrics: true
+  random_smiles_views: 5
+  generate_smiles: false
