@@ -23,22 +23,22 @@ OOD分布外分子性质预测模型
 
 ~~~text
 src/a2f_ood/
-  config.py       配置合并、校验、路径解析
-  data.py         RDKit、tokenizer、词表、随机视图、批处理
-  splits.py       预分配/scaffold/size/environment/random 拆分及审计
-  model.py        GINE、Transformer、对齐、融合、生成
-  losses.py       掩码任务损失、辅助目标、GroupDRO
-  metrics.py      概率/回归指标与最差环境
-  engine.py       数据准备、训练一步、推理、checkpoint
-  train.py        训练命令
-  predict.py      已训练模型推理命令
-  evaluate.py     CSV 指标命令
-  datasets.py     官方原始数据转换和通用下载
+  config.py       配置
+  data.py         RDKit、tokenizer、词表、批处理
+  splits.py       scaffold/size/environment/random 拆分
+  model.py        GIN、Transformer、对齐、融合、生成
+  losses.py       掩码任务损失、辅助目标
+  metrics.py      指标
+  engine.py       数据准备、训练、推理、checkpoint
+  train.py        训练
+  predict.py      推理
+  evaluate.py     指标命令
+  datasets.py     数据转换和下载
 scripts/
-  fetch_benchmarks.py    固定官方数据下载与完整性校验
-  download_datasets.py   通用 HTTPS / Google Drive 下载
-  prepare_datasets.py    官方 JSON 转换
-  run_ablation.py        消融配置生成及运行
+  fetch_benchmarks.py    官方数据下载与完整性校验
+  download_datasets.py   通用下载
+  prepare_datasets.py    JSON 转换
+  run_ablation.py        消融
 ~~~
 
 ~~~powershell
